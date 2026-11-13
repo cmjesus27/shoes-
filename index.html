@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tienda de calzado deportivo, ventas al detalle y por mayor, pedidos especiales y personalización.">
+  <title>URBAN KICKS | Tienda de calzado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">VENTA AL DETALLE Y POR MAYOR · ENVÍOS A TODO COSTA RICA</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio"><span class="brand-mark">U</span><span>URBAN<span class="brand-light">KICKS</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav id="mainNav">
+      <a href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a><a href="#mayorista">Mayoristas</a>
+      <a href="#personalizados">Personalizados</a><a href="#entregas">Entregas</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="accountBtn" title="Mi cuenta">♙ <span id="accountLabel">Ingresar</span></button>
+      <button class="cart-button" id="cartBtn">Bolsa <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">CALZADO · ESTILO · ACTITUD</p>
+        <h1>Tu próximo paso<br><em>empieza aquí.</em></h1>
+        <p class="hero-copy">Encuentra tus marcas favoritas, compra por unidad o lleva tu negocio al siguiente nivel con nuestros precios mayoristas.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#catalogo">Explorar catálogo</a><a class="text-link" href="#mayorista">Comprar al por mayor ↗</a></div>
+        <div class="hero-stats"><div><strong>100%</strong><span>Estilo urbano</span></div><div><strong>CR</strong><span>Entregas nacionales</span></div><div><strong>2 formas</strong><span>Detalle y mayor</span></div></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-circle"></div>
+        <div class="hero-tag">NEW<br>DROP <b>’26</b></div>
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=85" alt="Zapato deportivo rojo">
+        <div class="hero-caption"><span>URBAN COLLECTION</span><b>MOVE DIFFERENT.</b></div>
+      </div>
+    </section>
+
+    <section class="trust-strip"><span>NIKE</span><i>•</i><span>ADIDAS</span><i>•</i><span>ESTILO URBANO</span><i>•</i><span>VENTA MAYORISTA</span><i>•</i><span>ENVÍOS A DOMICILIO</span></section>
+
+    <section class="section catalog-section" id="catalogo">
+      <div class="section-heading"><div><p class="eyebrow">SELECCIÓN URBAN KICKS</p><h2>Encuentra tu par.</h2></div><p>Modelos para cada estilo y cada paso.</p></div>
+      <div class="catalog-tools">
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="Todos">Todos</button><button class="filter" data-filter="Nike">Nike</button><button class="filter" data-filter="Adidas">Adidas</button><button class="filter" data-filter="Urbano">Urbano</button>
+        </div>
+        <select id="sortSelect" aria-label="Ordenar productos"><option value="featured">Destacados</option><option value="low">Precio: menor a mayor</option><option value="high">Precio: mayor a menor</option></select>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="wholesale-banner" id="mayorista">
+      <div><p class="eyebrow">PARA EMPRENDEDORES Y NEGOCIOS</p><h2>Compra más.<br><em>Paga menos.</em></h2><p>Accede a precios especiales por volumen. Registra tu negocio y solicita una cotización personalizada.</p><a class="btn btn-light" href="#contacto" data-inquiry="mayorista">Solicitar precio mayorista</a></div>
+      <div class="wholesale-numbers"><div><strong>06+</strong><span>Unidades para consultar precio mayorista</span></div><div><strong>CR</strong><span>Atención y coordinación nacional</span></div></div>
+    </section>
+
+    <section class="services section" id="personalizados">
+      <div class="section-heading"><div><p class="eyebrow">MÁS QUE UNA TIENDA</p><h2>Servicios a tu medida.</h2></div><p>Cuéntanos qué necesitas y buscamos una solución.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">✳</div><p class="eyebrow">01 / A PEDIDO</p><h3>Pedidos especiales</h3><p>¿Buscas un modelo, talla o color que no aparece en el catálogo? Envíanos los detalles y consulta disponibilidad.</p><a href="#contacto" data-inquiry="especial">Solicitar un pedido ↗</a></article>
+        <article class="service-card service-dark"><div class="service-icon">✎</div><p class="eyebrow">02 / A TU ESTILO</p><h3>Zapatos personalizados</h3><p>Personaliza colores, detalles y acabados. La viabilidad, el precio y el tiempo se confirman según el diseño.</p><a href="#contacto" data-inquiry="personalizado">Crear mi diseño ↗</a></article>
+        <article class="service-card"><div class="service-icon">▣</div><p class="eyebrow">03 / HASTA TU PUERTA</p><h3>Entrega a domicilio</h3><p>Coordinamos entregas según tu ubicación. Consulta cobertura, costo y tiempo estimado antes de confirmar.</p><a href="#entregas">Ver entregas ↗</a></article>
+      </div>
+    </section>
+
+    <section class="delivery-section" id="entregas"><div class="delivery-copy"><p class="eyebrow">TE LO LLEVAMOS</p><h2>Tu compra,<br>hasta tu puerta.</h2><p>Selecciona entrega a domicilio al finalizar tu pedido. Confirmaremos dirección, costo y plazo antes de procesarlo.</p><a class="btn btn-primary" href="#catalogo">Elegir mis zapatos</a></div><div class="delivery-steps"><div><b>01</b><span><strong>Elige tu par</strong><small>Agrega tus productos al carrito.</small></span></div><div><b>02</b><span><strong>Confirma tus datos</strong><small>Indica ubicación y método de pago.</small></span></div><div><b>03</b><span><strong>Recibe tu pedido</strong><small>Coordinamos la entrega contigo.</small></span></div></div></section>
+
+    <section class="contact-section section" id="contacto"><div><p class="eyebrow">HABLEMOS</p><h2>¿Qué tienes<br>en mente?</h2><p>Déjanos tu solicitud. Nuestro equipo se pondrá en contacto para confirmar detalles y disponibilidad.</p></div>
+      <form id="inquiryForm" class="contact-form"><label>Tipo de solicitud<select id="inquiryType"><option value="Consulta general">Consulta general</option><option value="Precio mayorista">Precio mayorista</option><option value="Pedido especial">Pedido especial</option><option value="Zapatos personalizados">Zapatos personalizados</option></select></label><label>Nombre<input required id="inquiryName" placeholder="Tu nombre"></label><label>Correo o teléfono<input required id="inquiryContact" placeholder="Cómo podemos contactarte"></label><label>Detalles<textarea required id="inquiryDetails" rows="4" placeholder="Cuéntanos qué necesitas..."></textarea></label><button class="btn btn-primary" type="submit">Enviar solicitud</button><p class="form-note" id="inquiryMessage"></p></form>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#inicio"><span class="brand-mark">U</span><span>URBAN<span class="brand-light">KICKS</span></span></a><p>Calzado para moverte a tu manera.</p><div class="footer-links"><a href="#catalogo">Catálogo</a><a href="#mayorista">Mayoristas</a><a href="#contacto">Contacto</a></div><small>© 2026 Urban Kicks. Proyecto demostrativo. Las marcas mencionadas pertenecen a sus respectivos titulares.</small></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Carrito de compras"><div class="drawer-head"><h2>Tu bolsa <span id="drawerCount">(0)</span></h2><button class="close-btn" data-close>×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-bottom"><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">₡0</strong></div><button class="btn btn-primary full" id="checkoutBtn">Continuar al pago</button><p>El costo de envío se confirma antes de completar el pedido.</p></div></aside>
+
+  <section class="modal" id="accountModal"><div class="modal-head"><h2 id="accountTitle">Mi cuenta</h2><button class="close-btn" data-close>×</button></div><div id="accountContent"></div></section>
+  <section class="modal checkout-modal" id="checkoutModal"><div class="modal-head"><h2>Finalizar pedido</h2><button class="close-btn" data-close>×</button></div>
+    <form id="checkoutForm" class="modal-form">
+      <div class="form-two"><label>Nombre completo<input required id="checkoutName"></label><label>Teléfono<input required id="checkoutPhone"></label></div>
+      <label>Correo electrónico<input type="email" required id="checkoutEmail"></label>
+      <label>Dirección de entrega<textarea required id="checkoutAddress" rows="2" placeholder="Provincia, cantón, distrito y señas"></textarea></label>
+      <label>Tipo de entrega<select id="deliveryType"><option>Entrega a domicilio</option><option>Retiro coordinado</option></select></label>
+      <label>Método de pago<select id="paymentMethod"><option>SINPE Móvil (confirmación manual)</option><option>Transferencia bancaria</option><option>Efectivo contra entrega</option><option>Tarjeta (pasarela por configurar)</option></select></label>
+      <div class="checkout-total"><span>Total de productos</span><strong id="checkoutTotal">₡0</strong></div>
+      <button class="btn btn-primary full" type="submit">Enviar pedido para confirmación</button>
+      <p class="form-note">Demostración: no se procesa ningún cobro real. El pedido queda guardado en este navegador.</p>
+    </form>
+  </section>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
